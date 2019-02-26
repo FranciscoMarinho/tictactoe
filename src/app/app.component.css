@@ -1,0 +1,42 @@
+
+.score{
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.controls{
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.control {
+    margin-left: 2%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.tab {
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.coll {
+    display: inline-block;
+}
+.box {
+    width: 90px;
+    height: 90px;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+img {
+    width: 50px;
+}

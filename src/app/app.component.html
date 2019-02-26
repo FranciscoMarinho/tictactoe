@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<div class="score"><h2>Score: Player1 0 X 0 PLayer2 </h2></div>
+
+<div class="controls">
+  <h2>Controles</h2>
+  <div class="control" (drag)="dragOnPlayer1($event)">
+    <img [src]="player1.card.img">
+  </div>
+  <div class="control" (drag)="dragOnPlayer2($event)">
+    <img [src]="player2.card.img">
+  </div>
+  <div class="control"><button  (click)="clean()">reinicia</button></div>
+</div>
+
+
+<div class="tab">
+  <div class="coll">
+    <app-box #BoxComponent [player]='player'></app-box>
+    <app-box #BoxComponent [player]='player'></app-box>
+    <app-box #BoxComponent [player]='player'></app-box>
+  </div>
+
+  <div class="coll">
+    <app-box  #BoxComponent [player]='player'></app-box>
+    <app-box  #BoxComponent [player]='player'></app-box>
+    <app-box  #BoxComponent [player]='player'></app-box>
+
+  </div>
+
+  <div class="coll"> 
+      <app-box  #BoxComponent [player]='player'></app-box>
+      <app-box  #BoxComponent [player]='player'></app-box>
+      <app-box  #BoxComponent [player]='player'></app-box>
+  </div>
+
+</div>
+
+
